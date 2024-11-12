@@ -1,0 +1,605 @@
+{
+  "data": [
+    {
+      "id": 46,
+      "assignees": [
+        {
+          "id": 11,
+          "first_name": "Avinash"
+        },
+        {
+          "id": 12,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-11T18:31:03.485516+05:30",
+      "last_modified_at": "2024-11-11T18:31:03.497171+05:30",
+      "state": "TODO",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-11T18:31:03.484748+05:30",
+      "due_date": "2024-11-18T18:30:27.058000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Meeting Module",
+      "desc": "Create meeting is not working",
+      "attachment": "http://api.ideaneuron.com/media/attachments/2024/11/11/Screenshot_2024-11-11_182916.png",
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 45,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 1,
+        "first_name": "Admin"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-11T14:06:35.020592+05:30",
+      "last_modified_at": "2024-11-11T14:06:40.275403+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-11T14:06:35.020219+05:30",
+      "due_date": "2024-11-18T14:05:26.310000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Create Staked Bar Chart for Task data in admin dashboard",
+      "desc": "Create Staked Bar Chart for Task data in admin dashboard",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 44,
+      "assignees": [
+        {
+          "id": 5,
+          "first_name": "Payal"
+        }
+      ],
+      "assignor": {
+        "id": 5,
+        "first_name": "Payal"
+      },
+      "project": {
+        "name": "Khybar-cement",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-11T13:12:43.470574+05:30",
+      "last_modified_at": "2024-11-11T13:12:43.487401+05:30",
+      "state": "TODO",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-11T13:12:43.470081+05:30",
+      "due_date": "2024-11-18T12:41:20.526000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Edit User",
+      "desc": "Update role also in edit user",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 43,
+      "assignees": [
+        {
+          "id": 6,
+          "first_name": "Rupa"
+        }
+      ],
+      "assignor": {
+        "id": 6,
+        "first_name": "Rupa"
+      },
+      "project": {
+        "name": "Video KYC",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-11T12:37:26.023621+05:30",
+      "last_modified_at": "2024-11-11T18:22:37.861775+05:30",
+      "state": "DONE",
+      "priority": "HIGH",
+      "start_date": "2024-11-11T12:37:26.022895+05:30",
+      "due_date": "2024-11-18T11:10:09.961000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Token Auth in join meet Api",
+      "desc": "Add JWT token auth while joining meet via SDK",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 42,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-08T17:42:57.016774+05:30",
+      "last_modified_at": "2024-11-08T17:43:07.215516+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-08T17:42:57.016361+05:30",
+      "due_date": "2024-11-15T17:38:34.545000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Integrate Api in document and category module",
+      "desc": "Integrate Api in document and category module",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 41,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-08T17:42:23.780494+05:30",
+      "last_modified_at": "2024-11-08T17:43:04.591198+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-08T17:42:23.780100+05:30",
+      "due_date": "2024-11-15T17:38:34.545000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Create documents category",
+      "desc": "create a module for category creation for documents in document module",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 40,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-08T17:41:29.761897+05:30",
+      "last_modified_at": "2024-11-08T17:43:02.542762+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-08T17:41:29.761487+05:30",
+      "due_date": "2024-11-15T17:38:34.545000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Create Documents Upload",
+      "desc": "created ui for document upload",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 39,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-08T17:40:44.218180+05:30",
+      "last_modified_at": "2024-11-08T17:43:00.280538+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-08T17:40:44.217603+05:30",
+      "due_date": "2024-11-15T17:38:34.545000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Create Documents View",
+      "desc": "Create documents list view",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 38,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-08T17:39:55.457743+05:30",
+      "last_modified_at": "2024-11-08T17:39:58.997332+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-08T17:39:55.457396+05:30",
+      "due_date": "2024-11-15T17:38:34.545000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "Api integration in meeting",
+      "desc": "Integrated meeting api in meeting module",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 37,
+      "assignees": [
+        {
+          "id": 11,
+          "first_name": "Avinash"
+        }
+      ],
+      "assignor": {
+        "id": 11,
+        "first_name": "Avinash"
+      },
+      "project": {
+        "name": "OMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-08T17:37:05.207396+05:30",
+      "last_modified_at": "2024-11-08T17:37:10.356015+05:30",
+      "state": "DONE",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-08T17:37:05.206971+05:30",
+      "due_date": "2024-11-15T16:40:36.358000+05:30",
+      "remarks": null,
+      "module": null,
+      "label": "OMS b-end",
+      "desc": "Api for adding authorized signatory in oms b-end",
+      "attachment": "http://api.ideaneuron.com/media/attachments/2024/11/08/signature_oHdp82u.png",
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 48,
+      "assignees": [
+        {
+          "id": 14,
+          "first_name": "Rahul"
+        }
+      ],
+      "assignor": {
+        "id": 7,
+        "first_name": "Samiran"
+      },
+      "project": {
+        "name": "Inventory Management",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T09:00:23.234578+05:30",
+      "last_modified_at": "2024-11-12T09:05:45.998171+05:30",
+      "state": "IN_PROGRESS",
+      "priority": "HIGH",
+      "start_date": "2024-11-12T08:50:00.000000+05:30",
+      "due_date": "2024-11-20T18:00:00.000000+05:30",
+      "remarks": "Critical module for client delivery",
+      "module": "Stock",
+      "label": "Stock Reconciliation",
+      "desc": "Implement the stock reconciliation feature for warehouse",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 49,
+      "assignees": [
+        {
+          "id": 9,
+          "first_name": "Neha"
+        },
+        {
+          "id": 5,
+          "first_name": "Payal"
+        }
+      ],
+      "assignor": {
+        "id": 1,
+        "first_name": "Admin"
+      },
+      "project": {
+        "name": "HRMS",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T10:15:32.124578+05:30",
+      "last_modified_at": "2024-11-12T10:30:40.567981+05:30",
+      "state": "TODO",
+      "priority": "LOW",
+      "start_date": "2024-11-12T10:00:00.000000+05:30",
+      "due_date": "2024-11-25T17:00:00.000000+05:30",
+      "remarks": null,
+      "module": "Payroll",
+      "label": "Leave Encashment",
+      "desc": "Develop leave encashment calculations and UI",
+      "attachment": "http://api.ideaneuron.com/media/attachments/2024/11/12/leave_encashment_ui.png",
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 50,
+      "assignees": [
+        {
+          "id": 6,
+          "first_name": "Rupa"
+        }
+      ],
+      "assignor": {
+        "id": 6,
+        "first_name": "Rupa"
+      },
+      "project": {
+        "name": "eCommerce Platform",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T11:25:00.234123+05:30",
+      "last_modified_at": "2024-11-12T11:35:10.453789+05:30",
+      "state": "REVIEW",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-12T11:20:00.000000+05:30",
+      "due_date": "2024-11-30T18:00:00.000000+05:30",
+      "remarks": "Review required by QA team",
+      "module": "Checkout",
+      "label": "Payment Gateway Integration",
+      "desc": "Integrate new payment gateway for faster transactions",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 51,
+      "assignees": [
+        {
+          "id": 10,
+          "first_name": "Arjun"
+        }
+      ],
+      "assignor": {
+        "id": 5,
+        "first_name": "Payal"
+      },
+      "project": {
+        "name": "CRM",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T12:45:12.348123+05:30",
+      "last_modified_at": "2024-11-12T13:10:50.789561+05:30",
+      "state": "IN_PROGRESS",
+      "priority": "HIGH",
+      "start_date": "2024-11-12T12:40:00.000000+05:30",
+      "due_date": "2024-11-28T18:30:00.000000+05:30",
+      "remarks": "High priority for sales team",
+      "module": "Leads",
+      "label": "Lead Scoring Algorithm",
+      "desc": "Implement new scoring algorithm for better lead prioritization",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 52,
+      "assignees": [
+        {
+          "id": 3,
+          "first_name": "Ajay"
+        }
+      ],
+      "assignor": {
+        "id": 2,
+        "first_name": "Vikram"
+      },
+      "project": {
+        "name": "Marketing Dashboard",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T13:30:22.348561+05:30",
+      "last_modified_at": "2024-11-12T14:10:45.785612+05:30",
+      "state": "TODO",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-13T09:00:00.000000+05:30",
+      "due_date": "2024-11-18T17:00:00.000000+05:30",
+      "remarks": "Requires input from analytics team",
+      "module": "Analytics",
+      "label": "Traffic Analysis",
+      "desc": "Build traffic analysis feature for campaign insights",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 53,
+      "assignees": [
+        {
+          "id": 4,
+          "first_name": "Shreya"
+        }
+      ],
+      "assignor": {
+        "id": 1,
+        "first_name": "Admin"
+      },
+      "project": {
+        "name": "Customer Portal",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T14:20:33.129876+05:30",
+      "last_modified_at": "2024-11-12T14:50:10.456234+05:30",
+      "state": "REVIEW",
+      "priority": "HIGH",
+      "start_date": "2024-11-12T14:00:00.000000+05:30",
+      "due_date": "2024-11-17T16:30:00.000000+05:30",
+      "remarks": "Review UI design with design team",
+      "module": "User Interface",
+      "label": "Profile Page Redesign",
+      "desc": "Redesign customer profile page for improved UX",
+      "attachment": "http://api.ideaneuron.com/media/attachments/2024/11/12/profile_redesign_mockup.png",
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 54,
+      "assignees": [
+        {
+          "id": 11,
+          "first_name": "Manish"
+        },
+        {
+          "id": 12,
+          "first_name": "Priya"
+        }
+      ],
+      "assignor": {
+        "id": 8,
+        "first_name": "Ravi"
+      },
+      "project": {
+        "name": "Learning Management System",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T15:05:10.567834+05:30",
+      "last_modified_at": "2024-11-12T15:40:00.123456+05:30",
+      "state": "IN_PROGRESS",
+      "priority": "LOW",
+      "start_date": "2024-11-13T10:00:00.000000+05:30",
+      "due_date": "2024-11-30T18:00:00.000000+05:30",
+      "remarks": null,
+      "module": "Assessments",
+      "label": "Quiz Module Enhancement",
+      "desc": "Add new question types and timer feature in quizzes",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 55,
+      "assignees": [
+        {
+          "id": 7,
+          "first_name": "Samiran"
+        }
+      ],
+      "assignor": {
+        "id": 3,
+        "first_name": "Ajay"
+      },
+      "project": {
+        "name": "Inventory Management",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T16:10:30.234567+05:30",
+      "last_modified_at": "2024-11-12T16:45:50.789654+05:30",
+      "state": "COMPLETED",
+      "priority": "HIGH",
+      "start_date": "2024-11-10T09:00:00.000000+05:30",
+      "due_date": "2024-11-12T17:00:00.000000+05:30",
+      "remarks": "Task completed successfully ahead of schedule",
+      "module": "Stock",
+      "label": "Stock Alerts",
+      "desc": "Implement low stock alert notifications for products",
+      "attachment": null,
+      "created_by": null,
+      "last_modified_by": null
+    },
+    {
+      "id": 56,
+      "assignees": [
+        {
+          "id": 5,
+          "first_name": "Payal"
+        }
+      ],
+      "assignor": {
+        "id": 10,
+        "first_name": "Arjun"
+      },
+      "project": {
+        "name": "CRM",
+        "status": true
+      },
+      "is_record_active": true,
+      "created_at": "2024-11-12T17:00:10.345987+05:30",
+      "last_modified_at": "2024-11-12T17:30:45.123987+05:30",
+      "state": "TODO",
+      "priority": "MEDIUM",
+      "start_date": "2024-11-13T09:30:00.000000+05:30",
+      "due_date": "2024-11-22T18:30:00.000000+05:30",
+      "remarks": "Coordination required with sales department",
+      "module": "Customer Data",
+      "label": "Customer Feedback Analysis",
+      "desc": "Develop analytics for customer feedback collection",
+      "attachment": "http://api.ideaneuron.com/media/attachments/2024/11/12/feedback_analysis_chart.png",
+      "created_by": null,
+      "last_modified_by": null
+    }
+  ]
+}
