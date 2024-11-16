@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   InputAdornment,
   Grid,
@@ -100,8 +100,6 @@ const ReactTable = () => {
     prepareRow,
     nextPage,
     previousPage,
-    canPreviousPage,
-    canNextPage,
     state: { pageIndex },
   } = useTable(
     {
@@ -117,7 +115,7 @@ const ReactTable = () => {
   return (
     <Paper elevation={3} style={{ padding: "20px", margin: "20px" }}>
       <Grid container spacing={2}>
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Typography variant="h6" align="center" gutterBottom>
             Task Table
           </Typography>
@@ -146,11 +144,13 @@ const ReactTable = () => {
           <TableHead>
             {headerGroups.map((headerGroup) => (
               <TableRow
+                key={headerGroup.getHeaderGroupProps().key}
                 {...headerGroup.getHeaderGroupProps()}
                 style={{ backgroundColor: "#e0e0e0" }}
               >
                 {headerGroup.headers.map((column) => (
                   <TableCell
+                    key={column.getHeaderProps().key}
                     {...column.getHeaderProps(column.getSortByToggleProps())}
                     style={{
                       fontWeight: "bold",
@@ -178,6 +178,7 @@ const ReactTable = () => {
               prepareRow(row);
               return (
                 <TableRow
+                  key={row.getRowProps().key}
                   {...row.getRowProps()}
                   style={{
                     backgroundColor: rowIndex % 2 === 0 ? "#f9f9f9" : "#ffffff",
@@ -185,6 +186,7 @@ const ReactTable = () => {
                 >
                   {row.cells.map((cell) => (
                     <TableCell
+                      key={cell.getCellProps().key}
                       {...cell.getCellProps()}
                       style={{ width: cell.column.width }}
                     >
