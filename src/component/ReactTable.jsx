@@ -1,6 +1,26 @@
-/* eslint-disable react/jsx-key */
+import React, { useState } from "react";
+import {
+  InputAdornment,
+  Grid,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  TablePagination,
+  TextField,
+  Paper,
+  Button,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import { useTable, useSortBy, usePagination } from "react-table";
 import { data } from "../assets/data.json";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
+import SearchIcon from "@mui/icons-material/Search";
 
 const prioritySort = (rowA, rowB, columnId) => {
   const priorityOrder = { LOW: 1, MEDIUM: 2, HIGH: 3 };
@@ -16,59 +36,53 @@ const dateSort = (rowA, rowB, columnId) => {
 };
 
 const columns = [
-  {
-    Header: "ID",
-    accessor: "id",
-  },
-  {
-    Header: "Task Name",
-    accessor: "label",
-  },
-  {
-    Header: "Description",
-    accessor: "desc",
-  },
+  { Header: "ID", accessor: "id", width: "5%" },
+  { Header: "Task Name", accessor: "label", width: "15%" },
+  { Header: "Description", accessor: "desc", width: "20%" },
   {
     Header: "Priority",
     accessor: "priority",
     sortType: prioritySort,
+    width: "10%",
   },
-  {
-    Header: "State",
-    accessor: "state",
-  },
+  { Header: "State", accessor: "state", width: "10%" },
   {
     Header: "Assignees",
     accessor: "assignees",
-    Cell: ({ value }) => (
-      <div style={{ border: "2px red solid" }}>
-        {value.map((assignee) => assignee.first_name).join(", ")}
-      </div>
-    ),
+    width: "15%",
+    Cell: ({ value }) =>
+      value.map((assignee) => assignee.first_name).join(", "),
   },
-  {
-    Header: "Project",
-    accessor: "project.name",
-  },
+  { Header: "Project", accessor: "project.name", width: "10%" },
   {
     Header: "Created At",
     accessor: "created_at",
+    width: "10%",
     Cell: ({ value }) => new Date(value).toLocaleDateString(),
   },
   {
     Header: "Due Date",
     accessor: "due_date",
+    width: "10%",
     Cell: ({ value }) => new Date(value).toLocaleDateString(),
     sortType: dateSort,
   },
   {
     Header: "Attachment",
     accessor: "attachment",
+    width: "10%",
     Cell: ({ value }) =>
       value ? (
-        <a href={value} target="_blank" rel="noopener noreferrer">
-          <button>View Attachment</button>
-        </a>
+        <Button
+          variant="outlined"
+          color="primary"
+          startIcon={<AttachFileIcon />}
+          href={value}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View
+        </Button>
       ) : (
         "No Attachment"
       ),
@@ -76,7 +90,8 @@ const columns = [
 ];
 
 const ReactTable = () => {
-  const pageSize = 5; // Set your desired page size here
+  const [searchTerm, setSearchTerm] = useState("");
+  const pageSize = 5;
   const {
     getTableProps,
     getTableBodyProps,
@@ -100,64 +115,101 @@ const ReactTable = () => {
   );
 
   return (
-    <div className="container">
-      <table
-        {...getTableProps()}
-        style={{ width: "100%", borderCollapse: "collapse" }}
-      >
-        <thead>
-          {headerGroups.map((hg) => (
-            <tr
-              key={hg.getHeaderGroupProps().key}
-              {...hg.getHeaderGroupProps()}
-              style={{ background: "#f4f4f4" }}
-            >
-              {hg.headers.map((column) => (
-                <th
-                  {...column.getHeaderProps(column.getSortByToggleProps())}
-                  style={{ padding: "10px", border: "1px solid #ddd" }}
-                >
-                  {column.render("Header")}
-                  <span>
-                    {column.isSorted
-                      ? column.isSortedDesc
-                        ? " 🔽"
-                        : " 🔼"
-                      : ""}
-                  </span>
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {page.map((row) => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()} style={{ textAlign: "left" }}>
-                {row.cells.map((cell) => (
-                  <td
-                    {...cell.getCellProps()}
-                    style={{ padding: "10px", border: "1px solid #ddd" }}
+    <Paper elevation={3} style={{ padding: "20px", margin: "20px" }}>
+      <Grid container spacing={2}>
+        <Grid xs={12}>
+          <Typography variant="h6" align="center" gutterBottom>
+            Task Table
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <TextField
+            label="Search"
+            variant="outlined"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            style={{ marginBottom: "20px", width: "100%" }}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton onClick={() => {}}>
+                    <SearchIcon />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }}
+          />
+        </Grid>
+      </Grid>
+      <TableContainer>
+        <Table {...getTableProps()}>
+          <TableHead>
+            {headerGroups.map((headerGroup) => (
+              <TableRow
+                {...headerGroup.getHeaderGroupProps()}
+                style={{ backgroundColor: "#e0e0e0" }}
+              >
+                {headerGroup.headers.map((column) => (
+                  <TableCell
+                    {...column.getHeaderProps(column.getSortByToggleProps())}
+                    style={{
+                      fontWeight: "bold",
+                      width: column.width,
+
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
                   >
-                    {cell.render("Cell")}
-                  </td>
+                    {column.render("Header")}
+                    {column.isSorted ? (
+                      column.isSortedDesc ? (
+                        <ArrowDownwardIcon fontSize="small" />
+                      ) : (
+                        <ArrowUpwardIcon fontSize="small" />
+                      )
+                    ) : null}
+                  </TableCell>
                 ))}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      <div>
-        <button disabled={!canPreviousPage} onClick={previousPage}>
-          Prev
-        </button>
-        <span>{`${pageIndex + 1} / ${Math.ceil(data.length / pageSize)}`}</span>
-        <button disabled={!canNextPage} onClick={nextPage}>
-          Next
-        </button>
-      </div>
-    </div>
+              </TableRow>
+            ))}
+          </TableHead>
+          <TableBody {...getTableBodyProps()}>
+            {page.map((row, rowIndex) => {
+              prepareRow(row);
+              return (
+                <TableRow
+                  {...row.getRowProps()}
+                  style={{
+                    backgroundColor: rowIndex % 2 === 0 ? "#f9f9f9" : "#ffffff",
+                  }}
+                >
+                  {row.cells.map((cell) => (
+                    <TableCell
+                      {...cell.getCellProps()}
+                      style={{ width: cell.column.width }}
+                    >
+                      {cell.render("Cell")}
+                    </TableCell>
+                  ))}
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <TablePagination
+        component="div"
+        count={data.length}
+        page={pageIndex}
+        onPageChange={(e, newPage) => {
+          if (newPage > pageIndex) nextPage();
+          else previousPage();
+        }}
+        rowsPerPage={pageSize}
+        rowsPerPageOptions={[5, 10]}
+        onRowsPerPageChange={() => {}}
+      />
+    </Paper>
   );
 };
 
