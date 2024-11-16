@@ -120,7 +120,7 @@ const ReactTable = () => {
             Task Table
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={5}>
           <TextField
             label="Search"
             variant="outlined"
@@ -182,6 +182,13 @@ const ReactTable = () => {
                   {...row.getRowProps()}
                   style={{
                     backgroundColor: rowIndex % 2 === 0 ? "#f9f9f9" : "#ffffff",
+                    transition: "background-color 0.3s",
+                    cursor: "pointer",
+                  }}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "red",
+                    },
                   }}
                 >
                   {row.cells.map((cell) => (
